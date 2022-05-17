@@ -1,0 +1,76 @@
+form {
+    border:solid 1px black;
+    border-radius:5px;
+    padding:5px;
+    width:50vw;
+}
+
+form label {
+    margin:10px;
+    padding-top:10px;
+}
+
+form input {
+    margin:10px;    
+}
+
+button {
+    margin:10px;
+}
+
+.colName {
+    padding-right:20px;
+}
+
+.sortBtn {
+    position:absolute;
+    padding:0px;
+    font-size:0.5em;
+    right:0px;
+
+}
+
+.sortBtn:hover{
+    background:rgba(0,255,0,0.5);
+}
+
+#tableDiv {
+    padding:10px;
+    margin-top:20px;
+    border:1px solid black;
+    border-radius:5px;
+    max-width:50vw;
+
+}
+
+table {
+    min-width:75%;
+}
+
+td {
+
+    position:relative;
+    margin:10px;
+    padding-right:10px;
+    padding-top:0px;
+    padding-bottom:0px;
+    vertical-align:center;
+    word-wrap:break-word;
+    text-overflow:ellipsis;
+    max-width:100%;
+}
+
+thead {
+    background-color:#ccc;
+    font-weight:bold;
+    width:75%;
+    margin:10px;
+}
+
+tr:nth-of-type(2n) {
+    background-color:#eee;
+}
+
+#tableDiv select {
+    margin:10px;
+}

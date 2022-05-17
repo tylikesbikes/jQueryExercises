@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TyMDB</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <!-- Part Two - Movies App!
+    Allow users to sort alphabetically by the title of the movie or by the rating of the movie from lowest to highest and vice versa. -->
+
+    <h1>Welcome to TyMDB</h1>
+
+    <form id="movieInput" action="submit">
+        <label>
+            Movie Title
+            <input id="movieTitleInput" type="text" minlength="2" maxlength="100" name="title" placeholder="Enter at least two characters">
+        </label><br>
+        <label>
+            Movie Rating
+            <input id="movieRatingInput" type="range" min="0" max="10" step="0.5" name="rating" value="5">
+            <label class="ratingSliderValue">5</label> 
+        </label><br>
+        <button id="submitBtn" action="submit">Submit</button>
+    </form>
+
+    <div id="tableDiv">
+        <label>
+            Select Sort Direction<br>
+            <select name="sortDirection" id="sortDir">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+        </label>
+    <table>
+
+        
+        Movie List
+        <thead>
+            <tr>
+                <td><span class="colName">Title</span><span class="sortBtn asc" id="sortABC">Sort ABC</span></td>
+                <td><span class="colName">Rating</span><span class="sortBtn asc" id="sort123">Sort 123</span></td>
+            </tr>
+        </thead>
+        <tbody id="movieTableBody">
+
+        </tbody>
+    </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+        crossorigin="anonymous">
+    </script>
+
+    <script src="app.js"></script>
+</body>
+</html>
