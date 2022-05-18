@@ -23,17 +23,17 @@
             <input id="movieRatingInput" type="range" min="0" max="10" step="0.5" name="rating" value="5">
             <label class="ratingSliderValue">5</label> 
         </label><br>
-        <button id="submitBtn" action="submit">Submit</button>
+        <button id="submitBtn" action="submit">Add Movie</button>
     </form>
 
     <div id="tableDiv">
         <label>
-            Select Sort Direction<br>
+            Select Sort Direction
             <select name="sortDirection" id="sortDir">
                 <option value="asc">Ascending</option>
                 <option value="desc">Descending</option>
             </select>
-        </label>
+        </label><br>
     <table>
 
         
@@ -42,6 +42,7 @@
             <tr>
                 <td><span class="colName">Title</span><span class="sortBtn asc" id="sortABC">Sort ABC</span></td>
                 <td><span class="colName">Rating</span><span class="sortBtn asc" id="sort123">Sort 123</span></td>
+                <td></td>
             </tr>
         </thead>
         <tbody id="movieTableBody">

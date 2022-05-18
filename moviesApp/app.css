@@ -1,4 +1,5 @@
 form {
+    position:relative;
     border:solid 1px black;
     border-radius:5px;
     padding:5px;
@@ -6,12 +7,14 @@ form {
 }
 
 form label {
+    right:0px;
     margin:10px;
     padding-top:10px;
 }
 
 form input {
-    margin:10px;    
+    margin:10px;   
+    width:75%; 
 }
 
 button {
